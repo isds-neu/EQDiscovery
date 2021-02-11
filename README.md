@@ -8,7 +8,7 @@ This reposititory provides supplementary codes and data for the following work
 
 # System Requirements
 ## Hardware requirements
-This work was done on on 
+This work was done with
 - a workstation with 28 Intel Core i9-7940X CPUs and 2 NVIDIA GTX 1080Ti GPU cards; and
 - an Nvidia DGX with four Tesla V100 GPU of 32 GB memory.
 
@@ -17,15 +17,17 @@ This work was done on on
 The package has been tested on the following systems:
 - Windows 10 Pro
 - Linux: Ubuntu 18.04.3 LTS
-### Software dependencies & Installation guide
-This work was implemented on Tensorflow 1.15 in Python empowered by GPU. MATLAB was used for visual enhancement. We recommend installing Python via Anaconda first, then installing related Python packages through Anaconda and installing GPU operation packages. The list of softwares this work has been tested on is
+### Software dependencies 
+This work was implemented on Tensorflow-gpu 1.15 in Python empowered by GPU. MATLAB was used for final visual presentation in the manuscript. 
+### Installation guide
+We recommend installing Python via Anaconda first along with GPU support programs and then installing related Python packages through conda. The list of software this work has used is
+- NVIDIA® GPU drivers
+- CUDA® Toolkit
+- cuDNN
 - Anaconda
 - Spyder
 - Python 3.7
-- Tensorflow 1.15
-- NVIDIA® GPU drivers
-- CUDA® Toolkit
-- cuDNN SDK 8.0.4
+- Tensorflow-gpu 1.15
 - numpy
 - matplotlib
 - scipy
@@ -35,12 +37,11 @@ This work was implemented on Tensorflow 1.15 in Python empowered by GPU. MATLAB 
 - tqdm
 
 # How to run our cases?
-To try out our simulations, please visit "Examples" directory and we recommend running corresponding Python file in Spyder IDE. All datas are included in the directory.
+To try out our simulations, you can visit "Examples" directory and run corresponding Python file in Spyder IDE. Most datas are included in the directory. For data larger than 25 MB, we provide data generation code instead.
 
-Expected outcome will be some error metrics showing the quality of discovery, some simple figures illustrating predictive system responses, discovered governing equations and training loss histories for diagnostics purpose. The predicted data is also saved for MATLAB plotting purpose. 
+Expected outcome will show the quality of system response prediction and equation discovery. Specifically, some error metrics and simple figures illustrating predictive system responses, discovered governing equations and loss convergence for diagnostics purpose. Note that we used MATLAB codes to design formal figures in the manuscript.  
 
-The expected running time on our workstation ranges from 20 minutes to several hours, depending on the complexity of the system, the network and the amount of data.
+The expected running time on our workstation varies from 20 minutes to several hours, depending on the complexity of the system, the network architecture and the amount of data.
 
-To use the code for your purpose, you can modify sections for loading data, defining neural network, defining candidate library, etc. The codes have been carefully structured and commented.
 
 
