@@ -37,7 +37,7 @@ We recommend installing Python via Anaconda first along with GPU support program
 - tqdm
 
 # How to run our cases?
-To try out our simulations, you can visit "Examples" directory and run corresponding Python file in Spyder IDE. Most datas are included in the directory. For data larger than 25 MB, we provide data generation code instead.
+To try out our simulations, you can visit "Examples" directory and run corresponding Python file in Spyder IDE. Most datas are included in the directory. For data larger than 25 MB, we provide their Dropbox links for accessing.
 
 Expected outcome will show the quality of system response prediction and equation discovery. Specifically, some error metrics and simple figures illustrating predictive system responses, discovered governing equations and loss convergence for diagnostics purpose. Note that we used MATLAB codes to design formal figures in the manuscript.  
 
