@@ -422,7 +422,7 @@ with tf.device('/device:GPU:0'):
             err_f = np.mean((TestY - TestR.dot(w_best))**2)
             
             if l0_penalty == None and self.it == 0: 
-                self.l0_penalty_0 = 5**6*err_f
+                self.l0_penalty_0 = err_f
                 l0_penalty = self.l0_penalty_0
             elif l0_penalty == None:
                 l0_penalty = self.l0_penalty_0            
